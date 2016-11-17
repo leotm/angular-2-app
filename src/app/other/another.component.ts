@@ -3,9 +3,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-another',
   template: `
-    <p>
-      another Works!
-    </p>
+    <ng-content></ng-content>
   `
 })
 export class AnotherComponent {
