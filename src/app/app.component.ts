@@ -5,6 +5,7 @@ import { Component } from '@angular/core';
   selector: 'app-root',
   template: `
   {{title}}
+  <app-databinding></app-databinding>
   `,
   styles: [`
 
