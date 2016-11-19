@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-two-way-binding',
@@ -9,11 +9,6 @@ import { Component, OnInit } from '@angular/core';
   `,
   styles: []
 })
-export class TwoWayBindingComponent implements OnInit {
-
-  constructor() { }
-
-  ngOnInit() {
-  }
+export class TwoWayBindingComponent {
 
 }
