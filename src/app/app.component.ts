@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   template: `
   {{title}}
   <app-databinding></app-databinding>
-  `,
+  <app-lifecycle></app-lifecycle>
+  `, 
   styles: [`
 
   `]
