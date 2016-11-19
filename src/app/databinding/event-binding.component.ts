@@ -5,10 +5,11 @@ import { Component, EventEmitter, Output } from '@angular/core';
   template: `
   <button (click)="onClicked()">Click me!</button>
   `,
-  styles: []
+  styles: [],
+  outputs: ['clicked']
 })
 export class EventBindingComponent {
-  @Output('clickable') clicked = new EventEmitter<string>();
+  clicked = new EventEmitter<string>();
   onClicked() {
     this.clicked.emit('It works!');
   }
