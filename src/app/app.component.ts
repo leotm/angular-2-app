@@ -6,7 +6,8 @@ import { Component } from '@angular/core';
   template: `
   {{title}}
   <app-databinding></app-databinding>
-  <app-lifecycle></app-lifecycle>
+  <app-lifecycle *ngIf="!delete"></app-lifecycle>
+  <button (click)="delete = true">Click to Delete</button>
   `, 
   styles: [`
 
@@ -14,4 +15,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Running...';
+  delete = false; 
 }
